@@ -25,6 +25,7 @@ a{
 .nav-item{
     z-index: 2;
     text-align: center !important;
+    text-shadow: 2px 2px 8px rgb(204, 151, 151) !important ;
 }
 .navbar-nav {
     margin-left: auto;
@@ -134,6 +135,10 @@ a:hover{
 @media only screen and (max-width: 1000px) { 
     .students__details-img{
         /* height: 30rem; */
+    }
+    .navbar{
+        background-color: blue !important;
+        color: white !important;
     }
 }
 @media only screen and (max-width: 750px) {   
