@@ -23,7 +23,6 @@ body {
 .nav-item {
   z-index: 2;
   text-align: center !important;
-  /* text-shadow: 2px 2px 8px rgb(204, 151, 151) !important ; */
 }
 .navbar-nav {
   margin-left: auto;
