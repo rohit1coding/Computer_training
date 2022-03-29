@@ -60,7 +60,7 @@ body {
   background-color: blue;
   border-radius: 2rem;
   border: none;
-  pointer: cursor;
+  cursor: pointer;
 }
 .banner__text-btn:hover {
   transform: translateY(3px);
