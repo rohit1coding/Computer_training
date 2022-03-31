@@ -2,9 +2,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* Navbar Desktop */
+.nav-link {
+  color: black;
+}
 /* Navbar */
 .navbar {
+  padding: 0.1rem 1rem !important;
   background-color: white;
   color: black !important;
 }
@@ -46,18 +50,18 @@ body {
 .banner__text {
   position: absolute;
   left: 15%;
-  top: 15vw;
+  top: 18vw;
   color: white;
 }
 .banner__text-header {
   color: rgb(46, 121, 206);
+  font-size: 40px;
   font-weight: bold;
 }
 .banner__text-btn {
-  padding: 0.7rem;
+  padding: 0.5rem 0.7rem;
   color: white;
-  background-color: blue;
-  border-radius: 2rem;
+  background-color: rgb(46, 121, 206);
   border: none;
   cursor: pointer;
 }
@@ -81,6 +85,7 @@ body {
   padding: 2rem;
 }
 .courses__intro-heading {
+  font-weight: bold;
   margin-top: 2rem;
   text-align: center;
 }
@@ -126,28 +131,49 @@ body {
 }
 .footer__followus-icon {
   height: 1.5rem;
+  cursor: pointer;
 }
-
+.footer__followus-icon:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
 /* Responsive */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
+  .banner__text {
+    position: absolute;
+    left: 15%;
+    top: 16vw;
+    color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Nabvar */
+
   .navbar {
+    padding: 0.5rem 0 !important;
     background-color: blue !important;
     color: white !important;
   }
-  h1 {
-    font-size: 30px !important;
+  .navbar-home {
+    background-color: rgb(179, 179, 171);
   }
-}
-@media only screen and (max-width: 750px) {
+  .banner__text-header {
+    font-size: 25px;
+  }
   /* Banner  */
   .banner__text {
-    top: 5vw;
-    font-size: 50%;
+    position: absolute;
+    left: 15%;
+    top: 12vw;
+    color: white;
   }
-  h1 {
-    font-size: 25px !important;
+  .banner__text-header {
+    font-size: 20px;
   }
   /* Course  */
+  .courses {
+    padding: 2rem;
+  }
   .courses__items {
     display: block;
     padding: 0;
@@ -172,6 +198,9 @@ body {
   }
   .courses__item__details {
     padding-left: 0rem;
+  }
+  .course__item-header {
+    font-weight: bold !important;
   }
   /* Students */
   .students {
@@ -203,8 +232,14 @@ body {
     height: 1.5rem;
   }
 }
-@media only screen and (max-width: 330px) {
-  .banner__text {
+@media only screen and (max-width: 600px) {
+  .banner__text-btn {
     display: none;
+  }
+  .navbar__logo {
+    left: 4rem;
+    height: 7rem;
+    z-index: 2;
+    cursor: pointer;
   }
 }

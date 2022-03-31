@@ -32,7 +32,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-light"
+    >
       <div class="navbar-brand">
         <img src="./images/logo.png" alt="Logo" class="navbar__logo" />
       </div>
@@ -53,19 +55,16 @@
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-          <li class="nav-item active">
+          <li class="nav-item active navbar-home">
             <a class="nav-link mr-5" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link mr-5" href="#">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link mr-5" href="#">Courses</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link mr-5" href="#">Contact</a>
           </li>
         </ul>
@@ -75,9 +74,11 @@
     <div class="banner">
       <img src="./images/banner.png" alt="Banner" class="banner__image" />
       <div class="banner__text">
-        <h1 class="banner__text-header">SUCCESS ORIENTED</h1>
-        <p>Lorem, ipsum dolor.</p>
-        <button class="banner__text-btn">Read More</button>
+        <p class="banner__text-header">SUCCESS ORIENTED</p>
+        <div class="banner__text__details">
+          <p>Lorem, ipsum dolor.</p>
+          <button class="banner__text-btn">Read More</button>
+        </div>
       </div>
     </div>
     <!-- Course -->
@@ -102,7 +103,7 @@
             class="courses__item-computer-icon"
           />
           <div class="courses__item__details">
-            <h4>Mobile Dev</h4>
+            <h4><b>Mobile Dev</b></h4>
             <p>
               Lorem ipsum dolor sit amet elit. Et itaque, soluta pariatur magnam
               incidunt hic temporibus, voluptate vitae labore harum vero veniam.
@@ -116,7 +117,7 @@
             class="courses__item-computer-icon"
           />
           <div class="courses__item__details">
-            <h4>Communication</h4>
+            <h4><b>Communication</b></h4>
             <p>
               Lorem ipsum dolor sit amet elit. Et itaque, soluta pariatur magnam
               incidunt hic temporibus, voluptate vitae labore harum vero veniam.
@@ -130,7 +131,7 @@
             class="courses__item-computer-icon"
           />
           <div class="courses__item__details">
-            <h4>Computers</h4>
+            <h4><b>Computers</b></h4>
             <p>
               Lorem ipsum dolor sit amet elit. Et itaque, soluta pariatur magnam
               incidunt hic temporibus, voluptate vitae labore harum vero veniam.
@@ -144,7 +145,7 @@
             class="courses__item-computer-icon"
           />
           <div class="courses__item__details">
-            <h4>Website Design</h4>
+            <h4><b>Website Design</b></h4>
             <p>
               Lorem ipsum dolor sit amet elit. Et itaque, soluta pariatur magnam
               incidunt hic temporibus, voluptate vitae labore harum vero veniam.
@@ -158,7 +159,7 @@
             class="courses__item-computer-icon"
           />
           <div class="courses__item__details">
-            <h4>Technologies</h4>
+            <h4><b>Technologies</b></h4>
             <p>
               Lorem ipsum dolor sit amet elit. Et itaque, soluta pariatur magnam
               incidunt hic temporibus, voluptate vitae labore harum vero veniam.
@@ -172,7 +173,7 @@
             class="courses__item-computer-icon"
           />
           <div class="courses__item__details">
-            <h4>Hardware</h4>
+            <h4><b>Hardware</b></h4>
             <p>
               Lorem ipsum dolor sit amet elit. Et itaque, soluta pariatur magnam
               incidunt hic temporibus, voluptate vitae labore harum vero veniam.
@@ -184,7 +185,7 @@
     <!-- Student -->
     <div class="students">
       <div class="students__intro">
-        <h2 class="students__intro-heading">Our Students</h2>
+        <h2 class="students__intro-heading"><b>Our Students</b></h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
           blanditiis impedit,
