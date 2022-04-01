@@ -199,9 +199,6 @@ html {
     top: 5rem;
     color: white;
   }
-  .banner__text-btn {
-    /* display: none; */
-  }
   .banner__text-header {
     font-size: 20px;
   }
@@ -281,5 +278,8 @@ html {
 @media only screen and (max-width: 300px) {
   .navbar__logo {
     left: 2rem;
+  }
+  .banner__text-btn {
+    display: none;
   }
 }
