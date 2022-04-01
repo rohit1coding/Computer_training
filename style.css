@@ -51,7 +51,7 @@ html {
 }
 .banner__text {
   position: absolute;
-  left: 10rem;
+  left: 8rem;
   top: 18vw;
   color: white;
 }
@@ -77,10 +77,10 @@ html {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 0rem;
 }
 .courses__item {
-  padding: 1rem;
+  padding: 0.7rem;
   display: flex;
 }
 .courses__intro {
@@ -140,6 +140,14 @@ html {
   transition: 0.2s;
 }
 /* Responsive */
+@media only screen and (max-width: 1300px) {
+  .banner__text {
+    position: absolute;
+    /* left: 10rem; */
+    top: 15vw;
+    color: white;
+  }
+}
 @media only screen and (max-width: 991px) {
   html {
     font-size: 16px;
@@ -147,8 +155,12 @@ html {
   .banner__text {
     position: absolute;
     left: 4rem;
-    top: 6rem;
+    top: 10rem;
     color: white;
+  }
+  .banner__image {
+    width: 100%;
+    height: 22rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -176,7 +188,7 @@ html {
   /* Banner  */
   .banner__image {
     width: 100%;
-    height: 13rem;
+    height: 14rem;
   }
   .banner__text-header {
     font-size: 25px;
@@ -184,8 +196,11 @@ html {
   .banner__text {
     position: absolute;
     left: 4rem;
-    top: 6rem;
+    top: 5rem;
     color: white;
+  }
+  .banner__text-btn {
+    /* display: none; */
   }
   .banner__text-header {
     font-size: 20px;
@@ -259,9 +274,6 @@ html {
   }
 }
 @media only screen and (max-width: 600px) {
-  .banner__text-btn {
-    display: none;
-  }
   .navbar__logo {
     left: 4rem;
   }
