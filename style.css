@@ -105,16 +105,16 @@ html {
 .students__intro {
   text-align: center;
 }
-.students__details-img {
-  height: 30vw;
-}
 .students__details {
   display: flex;
   flex-direction: row-reverse;
   gap: 2rem;
 }
+.students__details-img {
+  width: 350%;
+}
 .students__details p {
-  margin: 1.5rem 4rem 0 5rem;
+  margin: 2rem;
   max-height: 26vw;
   overflow: hidden;
   /* text-overflow: ellipsis; */
@@ -249,18 +249,18 @@ html {
     text-align: center;
     padding: 2rem 1.5rem;
   }
+  .students__details {
+    margin-top: 2.5rem;
+    display: block;
+  }
   .students__details p {
     max-height: 200px;
-    margin: 0.5rem;
+    margin: 2rem 0.5rem;
     line-height: 2rem;
   }
   .students__details-img {
     width: 100%;
     height: auto;
-  }
-  .students__details {
-    margin-top: 2.5rem;
-    display: block;
   }
 
   /* Footer */
