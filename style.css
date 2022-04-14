@@ -5,7 +5,8 @@ body {
 html {
   font-size: 20px;
   --color-1: rgb(38, 130, 215);
-  --line-height: 2.5rem;
+  --line-height: 2.3;
+  --student-height: 25vw;
 }
 .custom-container {
   margin: 0 auto;
@@ -17,22 +18,26 @@ html {
   border: none !important;
 }
 .navbar {
+  border-bottom: 1px solid;
+  margin: 0 auto;
+  max-width: 2000px;
   background-color: white;
 }
 .navbar__logo {
   position: absolute;
   box-shadow: 8px 0px 6px rgba(0, 0, 0, 0.671);
   top: 0rem;
-  left: 1rem;
+  left: 1.5rem;
   height: 6rem;
   cursor: pointer;
 }
 .nav-item {
+  margin-right: 3rem;
   font-weight: bold;
   z-index: 2;
-  text-align: center;
 }
 .navbar-nav {
+  padding: 0.5rem 0;
   margin-left: auto;
 }
 .nav-item a:hover {
@@ -58,18 +63,16 @@ html {
   font-weight: bold;
 }
 .banner__text-btn {
-  padding: 0.3rem 0.7rem;
-  color: white;
+  padding: 0.6rem 0.8rem;
+  color: white !important;
   background-color: var(--color-1);
-  border: none;
-  cursor: pointer;
 }
 .banner__text-btn:hover {
   text-decoration: underline;
 }
 /* Courses */
 .courses__intro {
-  padding: 2rem;
+  margin: 2rem;
   text-align: center;
 }
 .courses__intro p {
@@ -77,10 +80,9 @@ html {
 }
 .courses__intro-heading {
   font-weight: bold;
-  margin-top: 2rem;
 }
 .courses__items {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -95,30 +97,34 @@ html {
   padding-left: 1rem;
   line-height: 1.8rem;
 }
-
+.courses__item__details h4 {
+  font-weight: bold;
+}
 /* Students */
 .students {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem 0 2rem;
   background-color: var(--color-1);
   color: white;
 }
 .students__intro {
   text-align: center;
 }
+.students__intro-heading {
+  font-weight: bold;
+}
 .students__details {
   display: flex;
   flex-direction: row-reverse;
-  gap: 2rem;
+  gap: 3rem;
 }
 .students__details-img {
-  width: 350%;
+  margin-left: 8rem;
+  min-width: 40%;
 }
 .students__details p {
-  margin: 2rem;
-  max-height: 26vw;
-  overflow: hidden;
-  /* text-overflow: ellipsis; */
-  /* white-space: nowrap; */
+  height: 400px;
+  margin: 1rem 0rem;
+  overflow-y: hidden;
   line-height: var(--line-height);
 }
 
@@ -140,41 +146,54 @@ html {
 .footer__followus-icon {
   height: 1.5rem;
   margin: 0 0.2rem;
-  cursor: pointer;
 }
 /* Responsive */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1500px) {
+  .students__details p {
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 1200px) {
   html {
     font-size: 16px;
   }
   .students__details p {
-    margin: 1.5rem 0.5rem;
-    max-height: 250px;
-    overflow: hidden;
+    height: 250px;
   }
   .banner__text {
-    left: 4rem;
-    top: 10rem;
+    left: 5.5rem;
+    top: 11.5rem;
   }
   .banner__image {
     width: 100%;
     height: 22rem;
   }
 }
+@media only screen and (max-width: 991px) {
+  .students__details p {
+    height: 210px;
+  }
+}
 @media only screen and (max-width: 767px) {
   /* Nabvar */
+  .navbar {
+    padding: 0 !important;
+  }
   .navbar__logo {
-    /* left: 4rem; */
     left: 0;
     right: 0;
     margin: 0 auto;
   }
+  .navbar-toggler {
+    border: none !important;
+    margin: 1rem;
+  }
   .navbar-icon {
-    width: 2rem;
     padding: 0.5em 0.1rem;
+    width: 2.2rem;
   }
   .navbar-collapse {
-    margin-top: 1.5rem;
+    padding: 0 !important;
     background-color: var(--color-1);
     z-index: 10;
   }
@@ -185,10 +204,16 @@ html {
     color: black !important;
   }
   .nav-link {
+    font-weight: lighter;
     color: white !important;
   }
+  .navbar-nav {
+    padding: 0;
+  }
   .nav-item {
-    padding: 0.3rem;
+    margin-right: 0;
+    padding: 0.5rem 0;
+    text-align: center;
   }
   .nav-item:hover {
     background-color: rgb(229, 229, 226);
@@ -203,7 +228,7 @@ html {
   }
   .banner__text {
     left: 4rem;
-    top: 5rem;
+    top: 7.5rem;
   }
   .banner__text-header {
     font-size: 24px;
@@ -247,18 +272,18 @@ html {
   /* Students */
   .students {
     text-align: center;
-    padding: 2rem 1.5rem;
   }
   .students__details {
     margin-top: 2.5rem;
     display: block;
   }
   .students__details p {
-    max-height: 200px;
+    height: 200px;
     margin: 2rem 0.5rem;
     line-height: 2rem;
   }
   .students__details-img {
+    margin: 0;
     width: 100%;
     height: auto;
   }
@@ -271,9 +296,10 @@ html {
     text-align: center;
   }
   .footer__followus {
-    display: block;
+    display: inline-block;
   }
   .footer__followus-icons {
+    margin-top: -15px;
     display: block;
   }
   .footer__followus-icon {
