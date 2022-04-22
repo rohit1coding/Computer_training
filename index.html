@@ -32,52 +32,47 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="custom-container">
-      <header>
-        <nav
-          class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-light"
-        >
-          <div class="navbar-brand">
-            <img src="./images/logo_new.png" alt="Logo" class="navbar__logo" />
-          </div>
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-light"
+      >
+        <div class="navbar-brand">
+          <img src="./images/logo_new.png" alt="Logo" class="navbar__logo" />
+        </div>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img
-              class="navbar-icon"
-              src="./images/mob-menu.png"
-              alt="mob-menu"
-            />
-            <!-- <span class="navbar-toggler-icon"></span> -->
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active navbar-home">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Courses</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <!-- Banner -->
-      <section class="banner">
-        <img src="./images/banner.png" alt="Banner" class="banner__image" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img class="navbar-icon" src="./images/mob-menu.png" alt="mob-menu" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-right">
+            <li class="nav-item active navbar-home">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-container">
+        <!-- <img src="./images/banner.png" alt="Banner" class="banner__image" /> -->
         <div class="banner__text">
           <h2 class="banner__text-header">SUCCESS ORIENTED</h2>
           <div class="banner__text__details">
@@ -85,9 +80,11 @@
             <a class="banner__text-btn" href="#">Read More</a>
           </div>
         </div>
-      </section>
-      <!-- Course -->
-      <section class="courses">
+      </div>
+    </section>
+    <!-- Course -->
+    <section class="courses">
+      <div class="course-container">
         <div class="courses__intro">
           <h2 class="courses__intro-heading">Our Courses</h2>
           <p>
@@ -187,9 +184,11 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- Student -->
-      <section class="students">
+      </div>
+    </section>
+    <!-- Student -->
+    <section class="students">
+      <div class="student-container">
         <div class="students__intro">
           <h2 class="students__intro-heading">Our Students</h2>
           <p>
@@ -223,9 +222,11 @@
             class="students__details-img"
           />
         </div>
-      </section>
-      <!-- Footer -->
-      <footer class="footer">
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
         <div class="copyright">
           <p class="copyright-text">Copyright &copy;.COMTRAING 2019</p>
         </div>
@@ -262,7 +263,7 @@
             </a>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
