@@ -7,21 +7,7 @@ html {
   --color-1: rgb(38, 130, 215);
   --line-height: 2.3;
   --student-height: 25vw;
-}
-.banner-container {
-  margin: 0 auto;
-  max-width: 2000px;
-}
-.course-container {
-  margin: 0 auto;
-  max-width: 2000px;
-}
-.student-container {
-  margin: 0 auto;
-  max-width: 2000px;
-}
-.footer {
-  background-color: black;
+  --screen-size: 1200px;
 }
 /* Navbar */
 .navbar {
@@ -34,7 +20,7 @@ html {
 }
 .navbar-collapse {
   margin: 0 auto;
-  max-width: 2000px;
+  max-width: var(--screen-size);
 }
 .navbar__logo {
   position: absolute;
@@ -83,6 +69,10 @@ html {
   text-decoration: underline;
 }
 /* Courses */
+.courses {
+  margin: 0 auto;
+  max-width: var(--screen-size);
+}
 .courses__intro {
   margin: 2rem;
   text-align: center;
@@ -109,10 +99,15 @@ html {
   padding-left: 1rem;
   line-height: 1.8rem;
 }
-.courses__item__details h4 {
+.courses__item__details h3 {
   font-weight: bold;
+  font-size: 26px;
 }
 /* Students */
+.student-container {
+  margin: 0 auto;
+  max-width: var(--screen-size);
+}
 .students {
   padding: 2rem 2rem 0 2rem;
   background-color: var(--color-1);
@@ -132,21 +127,22 @@ html {
 .students__details-img {
   margin-left: 8rem;
   min-width: 40%;
+  align-self: flex-end;
 }
 .students__details p {
-  height: 400px;
   margin: 1rem 0rem;
   overflow-y: hidden;
   line-height: var(--line-height);
 }
-
 /* Footer */
+.footer {
+  background-color: black;
+}
 .footer-container {
   margin: 0 auto;
-  max-width: 2000px;
+  max-width: var(--screen-size);
   margin-top: 3rem;
   padding: 1rem 2rem 0rem 2rem;
-
   color: white;
   display: flex;
   justify-content: space-between;
@@ -162,14 +158,12 @@ html {
   margin: 0 0.2rem;
 }
 /* Responsive */
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1200px) {
   .navbar__logo {
-    margin-left: calc((100% - 2000px) / 2);
+    margin-left: calc((100% - var(--screen-size)) / 2);
   }
-}
-@media only screen and (max-width: 1500px) {
-  .students__details p {
-    height: 330px;
+  .banner__text {
+    margin-left: calc((100% - var(--screen-size)) / 2);
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -177,19 +171,26 @@ html {
     font-size: 16px;
   }
   .students__details p {
-    height: 250px;
+    /* font-size: 20px; */
   }
 }
 @media only screen and (max-width: 991px) {
-  .students__details p {
-    height: 210px;
-  }
   .banner {
     height: 25rem;
   }
   .banner__text {
     padding-top: 15rem;
     padding-left: 5rem;
+  }
+  .students__details {
+    gap: 1rem;
+  }
+  .students__details-img {
+    margin-left: 2rem;
+  }
+  .students__details p {
+    font-size: 16px;
+    margin: 0rem 0rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -303,7 +304,6 @@ html {
     width: 100%;
     height: auto;
   }
-
   /* Footer */
   .footer-container {
     margin-top: 3rem;
