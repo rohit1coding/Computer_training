@@ -10,6 +10,14 @@ html {
   --screen-size: 1200px;
 }
 /* Navbar */
+.footer__followus-icons {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+}
+.footer__followus-icons li {
+  display: inline-block;
+}
 .navbar {
   border-bottom: 1px solid;
   background-color: white;
@@ -131,7 +139,6 @@ html {
 }
 .students__details p {
   margin: 1rem 0rem;
-  overflow-y: hidden;
   line-height: var(--line-height);
 }
 /* Footer */
@@ -169,9 +176,6 @@ html {
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 16px;
-  }
-  .students__details p {
-    /* font-size: 20px; */
   }
 }
 @media only screen and (max-width: 991px) {
@@ -295,7 +299,6 @@ html {
     display: block;
   }
   .students__details p {
-    height: 200px;
     margin: 2rem 0.5rem;
     line-height: 2rem;
   }
